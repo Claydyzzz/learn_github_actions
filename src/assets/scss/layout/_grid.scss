@@ -1,0 +1,135 @@
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0,1fr));
+    gap: 16px;
+}
+.box{
+    background-color: aquamarine;
+    border-radius: 20px;
+    height: 400px;
+}
+.col-1{grid-column: span 1;}
+.col-2{grid-column: span 2;}
+.col-3{grid-column: span 3;}
+.col-4{grid-column: span 4;}
+.col-5{grid-column: span 5;}
+.col-6{grid-column: span 6;}
+.col-7{grid-column: span 7;}
+.col-8{grid-column: span 8;}
+.col-9{grid-column: span 9;}
+.col-10{grid-column: span 10;}
+.col-11{grid-column: span 11;}
+.col-12{grid-column: span 12;}
+
+@media(max-width: 768px){
+.col-md-1{grid-column: span 1;}
+.col-md-2{grid-column: span 2;}
+.col-md-3{grid-column: span 3;}
+.col-md-4{grid-column: span 4;}
+.col-md-5{grid-column: span 5;}
+.col-md-6{grid-column: span 6;}
+.col-md-7{grid-column: span 7;}
+.col-md-8{grid-column: span 8;}
+.col-md-9{grid-column: span 9;}
+.col-md-10{grid-column: span 10;}
+.col-md-11{grid-column: span 11;}
+.col-md-12{grid-column: span 12;}
+}
+@media(max-width: 500px){
+    [class^="col-"],
+    [class*=" col-"]{
+        grid-column: span 12;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .hero__content, .feature__card, .about__content, .message__info, .questions__content {
+    padding: 2rem;
+  }
+  
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .features .line {
+    margin: 15px 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    gap: 12px;
+  }
+
+  .col-md-12{ grid-column: span 12; }
+  
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .hero{
+    &__content{
+      @media(max-width: 768px){
+        text-align: center;
+        padding: 0 1rem;
+        gap: 16px;
+      }
+    }
+  
+    &__img{
+      @media(max-width: 768px){
+        grid-column: span 12;
+        width: 100%;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .hero__content, .about__content, .feature__card, .message__info {
+    grid-column: span 12 !important;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .hero__content a {
+    align-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  [class^="col-"], [class*=" col-"] {
+    grid-column: span 12 !important;
+  }
+
+  .hero {
+    padding: 2rem 0;
+  }
+
+  .menu {
+    padding: 0.5rem 1rem;
+  }
+
+  .feature__card, .about__content, .message__info {
+    padding: 1rem;
+    gap: 12px;
+  }
+  .footer {
+    padding: 1.5rem 1rem;
+    text-align: center;
+
+    &__content {
+      flex-direction: column;
+      justify-content: center;
+      gap: 12px;
+    }
+  }
+}

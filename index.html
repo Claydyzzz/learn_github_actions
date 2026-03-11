@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landing-page</title>
+  </head>
+  <body>
+    <header >
+      <ul class="menu container">
+        <li><a href="#">LOGO</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <section class="hero container">
+        <div class="grid">
+          <article class="hero__content col-6">
+            <h1>Welcome to Our Landing Page</h1>
+            <p>Build Your Next Project with Us</p>
+            <a href="#" class="btn">Get Started</a>
+          </article>
+          <img class="hero__img col-6" src="/src/assets/img/hero.png">
+        </div>
+
+      </section>
+    </header>
+    <section class="features container grid">
+      <h2 class="col-12">Our Features</h2>
+      <div class="line col-12"></div>
+    
+      <div class="feature__card col-4">
+        <img src="src/assets/img/feature_one.png">
+        <h3>Feature One</h3>
+        <p>Short description of the first feature.</p>
+      </div>
+    
+      <div class="feature__card col-4">
+        <img src="src/assets/img/feature_two.png">
+        <h3>Feature Two</h3>
+        <p>Short description of the second feature.</p>
+      </div>
+    
+      <div class="feature__card col-4">
+        <img src="src/assets/img/feature_three.png">
+        <h3>Feature Three</h3>
+        <p>Short description of the third feature.</p>
+      </div>
+    </section>
+
+    <section class="about container grid">
+      <img src="src/assets/img/about_illustration.png" class="col-6">
+    
+      <article class="about__content col-6">
+        <h2>About Us</h2>
+        <hr class="col-">
+        <div class="line col-12"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Impedit vitae tenetur amet quia corrupti odio<br> id omnis molestiae illo quod numquam, animi atque vero.
+        </p>
+        <a href="#" class="btn">Learn More</a>
+      </article>
+    </section>
+    <section class="message container grid">
+      <article class="message__info col-6">
+        <h2>Contact Us</h2>
+        <h3>Have Questions ? <br>Reach out to us!</br></h3>
+        <p></p>
+      </article>
+
+      <form action="" class="col-6">
+        <input type="text" placeholder="Your Name" required minlength="2" maxlength="15">
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
+    <footer class="footer container grid">
+      <p class="col-6 col-md-12">2024 Your company</p>
+      <div class="col-6 col-md-12 footer__content">
+        <a>Privacy Policy</a>
+        <a>Terms of Use</a>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

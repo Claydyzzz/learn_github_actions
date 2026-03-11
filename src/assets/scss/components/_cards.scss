@@ -1,0 +1,15 @@
+.feature__card{
+  box-shadow: 0 0 15px rgba(0,0,0,.15);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  p{
+    line-height: 1.6;
+  }
+  img{
+    margin: 0 auto;
+  }
+}
